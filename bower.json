@@ -1,0 +1,18 @@
+{
+  "name": "1-1-studio-html",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "bootstrap4": "^4.1.1",
+    "jquery.maskedinput": "^1.4.1",
+    "magnific-popup": "Magnific-Popup#^1.1.0",
+    "jQuery.mmenu": "mmenu#^7.0.3",
+    "swiper": "^4.3.0",
+    "fancybox": "fancyBox#^3.3.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
+}

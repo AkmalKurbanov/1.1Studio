@@ -1,0 +1,138 @@
+.flabCasting{
+  &__background{
+    height: rem(320px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: rem(30px);
+  }
+  &__application{
+    padding-top: rem(22px);
+  }
+  &__applTitle{
+    position: relative;
+    font-size: rem(16px);
+    display: inline-block;
+    margin: 0;
+    margin-bottom: rem(29px);
+    color: #000;
+    &:before {
+      content: '';
+      width: rem(20px);
+      height: rem(3px);
+      background-color: #020f1d;
+      position: absolute;
+      right: rem(-40px);
+      top: 50%;
+      transform: translateY(-50%);
+      overflow: hidden;
+    }
+    &--news{
+      text-transform: uppercase;
+      font-size: rem(25px);
+      color: #000;
+      &:before{
+        @include media-breakpoint-down(xs) {
+          right: 0;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        font-size: rem(20px);
+      }
+    }
+  }
+  &__formit{}
+  &__input{
+    padding-bottom: rem(19px);
+    h3{
+      display: block;
+      font-size: rem(14px);
+      font-weight: 400;
+      margin: 0;
+      padding-bottom: rem(13px);
+    }
+    input,
+    textarea{
+      max-width: 100%;
+      width: 100%;
+      height: rem(38px);
+      border: solid rem(1px) #e5e5e5;
+      padding-left: rem(8px);
+      font-size: rem(14px);
+      color: #737b7e;
+      outline: none;
+    }
+    textarea{
+      padding-top: rem(8px);
+      height: rem(115px);
+    }
+    button{
+      border: none;
+      font-size: rem(16px);
+      text-transform: uppercase;
+      background-color: #020f1d;
+      color: #fff;
+      padding: 10px 25px;
+      cursor: pointer;
+      @media (max-width: 500px) {
+        margin: 0 auto;
+        display: block;
+        padding: rem(6px) rem(15px);
+      }
+    }
+    ._checkbox{
+      display: inline-block;
+      width: rem(15px);
+      height: rem(15px);
+      border: solid rem(1px) #e5e5e5;
+    }
+    input[type=checkbox]:checked + label {
+      color: #000;
+    }
+    input[type=checkbox]{
+      margin-right: rem(15px);
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    input[type=checkbox] + label{
+      margin-right: rem(35px);
+      cursor: pointer;
+    }
+    label{
+      font-size: rem(14px);
+      color: #737b7e;
+    }
+    &--file{
+      label{
+        cursor: pointer;
+        @media (max-width: 350px) {
+          display: block;
+          margin: 0 auto;
+          margin-left: rem(0);
+          margin-top: rem(15px);
+          text-align: center;
+        }
+      }
+    }
+    &--date{
+      input[type=day]{
+        display: inline-block;
+        width: 20%;
+      }
+      input[type=text]{
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+      }
+      input[type=year]{
+        display: inline-block;
+        width: 20%;
+      }
+    }
+    &--contacts{
+      h3{
+        padding-bottom: rem(5px);
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.flabVideoDetail {
+  &__panelMenu {
+    min-height: rem(45px);
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    padding-left: rem(5px);
+    margin-bottom: rem(25px);
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: rem(25px);
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: #737b7e;
+      font-size: rem(14px);
+      font-weight: 400;
+      text-decoration: none;
+      transition: all .3s;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 57%;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-top: -0.5px;
+        height: 1px;
+        background-color: red;
+        width: 0;
+        transition: all .3s;
+      }
+      &:hover {
+        &:before {
+          width: 105%;
+        }
+      }
+    }
+    &--active {
+      a {
+        &:before {
+          width: 105%;
+        }
+      }
+    }
+  }
+  &__videoList {
+    padding-top: rem(20px);
+    @media (max-width: 576.98px) {
+      text-align: center;
+    }
+  }
+  &__videoItem {
+    max-width: rem(360px);
+    width: 100%;
+    background-color: #ddd;
+    display: inline-block;
+    outline: none;
+    margin-bottom: rem(30px);
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      .triangle {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        stroke: #fc1114;
+        z-index: 10; 
+      }
+      .circle {
+        stroke-dashoffset: 0;
+        opacity: 1; 
+      }
+    }
+  }
+}

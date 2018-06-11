@@ -1,0 +1,106 @@
+.flabCareers{
+  p{
+    font-size: rem(16px);
+    color: #000;
+    margin-top: rem(10px);
+  }
+  &__wrap{
+    text-align: center;
+    padding-top: rem(15px);
+    padding-bottom: rem(15px);
+    h3{
+      font-size: rem(16px);
+      color: #000;
+      margin-bottom: rem(20px);
+    }
+  }
+  &__blog{
+    padding-left: rem(19px);
+  }
+  &__itemName{
+    margin-bottom: rem(17px);
+    p{
+      font-size: rem(16px);
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 0;
+      color: #000;
+      cursor: pointer;
+      position: relative;
+      transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+      &:after{
+        content: '';
+        position: absolute;
+        left: rem(-19px);
+        top: 45%;
+        transform: translateY(-50%);
+        width: rem(10px);
+        height: rem(10px);
+        background-color: #737b7e;
+        border-radius: 10em;
+      }
+      &:before {
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+        left: rem(-23px);
+        right: rem(-3px);
+        display: block;
+        height: 1px;
+        background-color: #ff080c;
+        content: '';
+        transform: scale(0);
+      }
+      &:hover{
+        color: #000;
+        &:before{
+          content: '';
+          transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+          transform: scale(1);
+        }
+      }
+    }
+    .blink_link{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+        left: rem(-23px);
+        right: rem(-3px);
+        display: block;
+        height: 1px;
+        background-color: #ff080c;
+      }
+    }
+  }
+  &__hiddenItem{
+    display: none;
+    padding-bottom: rem(50px);
+    p{
+      font-size: rem(16px);
+      color: #000;
+      margin-bottom: rem(20px);
+    }
+    h3{
+      font-size: rem(16px);
+      color: #000;
+      margin-bottom: rem(5px);
+    }
+    ul{
+      margin-bottom: rem(16px);
+      li{
+        margin-bottom: rem(2px);
+        font-size: rem(16px);
+      }
+    }
+    ._button{
+      font-size: rem(16px);
+      text-transform: uppercase;
+      background-color: #020f1d;
+      color: #fff;
+      padding: 10px 25px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.flabLastProjects {
+  overflow: hidden;
+  &__top {
+    min-height: rem(146px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    flex-direction: column;
+  }
+  &__caption {
+    color: #737b7e;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: rem(12px);
+    text-transform: uppercase;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: rem(480px);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: all .4s;
+      z-index: 1;
+    }
+    img {
+      transition: all 1s;
+      width: 100%;
+      max-width: 100%;
+    }
+    &:hover {
+      img {
+        &:nth-child(2) {
+          transform: rotate(3deg) scale(1.1);
+        }
+      }
+    }
+  }
+  &__logo {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 90%;
+      @media (max-width: 1400.98px) {
+        width: 70%;
+      }
+      @media (max-width: 1199.98px) {}
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "mixins/fontface";
+@include font-face("SFUIDisplay", "../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular");
+@include font-face("SFUIDisplay", "../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIText-Bold", bold);
+@include font-face("SFUIDisplay", "../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold", 600);
+// @include font-face("icon", "../fonts/icon/font/flabioiconfont");
+
+
+body {
+  font-family: "SFUIDisplay";
+}

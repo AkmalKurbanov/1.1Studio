@@ -1,0 +1,130 @@
+.flabAboutUs {
+  .flabTextPart {
+    p {
+      font-weight: normal;
+      color: #000000;
+      font-size: rem(16px);
+      line-height: 1.25;
+      margin-top: rem(25px);
+      &:first-child {
+        margin-top: 0;
+      }
+      @media (max-width: 991.98px) {
+        font-size: rem(15px);
+      }
+    }
+    ul {
+      margin: 0;
+      padding-left: rem(30px);
+      li {
+        padding-bottom: rem(5px);
+      }
+    }
+  }
+  &__rewards {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+  .rewardsSlide-js {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: rem(35px);
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .sliderButtons {
+    position: absolute;
+    right: 0;
+    top: rem(-27px);
+    width: rem(70px);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: rem(25px);
+    color: #737b7e;
+    transition: all .3s;
+    background-image: none;
+    width: rem(20px);
+    height: rem(20px);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rem(1px) solid #737b7e;
+    &:hover {
+      border: rem(1px) solid rgb(204, 194, 194);
+      i {
+        color: rgb(204, 194, 194);
+      }
+    }
+  }
+  &__rewardsItem {
+    // background-color: #f8f8f8;
+    width: 100%;
+    min-height: rem(367px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all .3s;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+      .hoverEffect {
+        opacity: 1;
+        &:nth-child(1) {
+          left: rem(12px);
+          top: rem(12px);
+        }
+        &:nth-child(2) {
+          right: rem(12px);
+          top: rem(12px);
+        }
+        &:nth-child(3) {
+          left: rem(12px);
+          bottom: rem(12px);
+        }
+        &:nth-child(4) {
+          right: rem(12px);
+          bottom: rem(12px);
+        }
+      }
+    }
+  }
+}
