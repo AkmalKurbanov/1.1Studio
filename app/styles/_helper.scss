@@ -245,8 +245,7 @@ body {
   }
 }
 
-// animation blink for logo circle end
-// animation for equalizer
+
 @keyframes shorteq {
   0% {
     height: 10px
@@ -271,8 +270,7 @@ body {
   }
 }
 
-// animation for equalizer end
-// caption
+
 .flabCaptionWrap {
   text-align: right;
   margin-bottom: rem(10px);
@@ -949,20 +947,23 @@ html [type="button"],
     text-align: center;
     color: #000000;
   }
-  .fancybox-close-small {
-    color: #fff;
-    top: rem(-45px);
-    right: rem(-45px);
-    transition: all .3s;
-    svg {
-      border-radius: 100%;
-      border: rem(1px) solid #fff;
-    }
-    @media (max-width: 576.98px) {
-      display: none;
-    }
-    &:hover {
-      transform: rotate(360deg) scale(1.2);
+}
+.fancybox-close-small {
+  color: #fff;
+  top: rem(-45px);
+  right: rem(-45px);
+  transition: all .3s;
+  svg {
+    border-radius: 100%;
+    border: rem(1px) solid #fff;
+  }
+  @media (max-width: 576.98px) {
+    display: none;
+  }
+  &:hover {
+    transform: rotate(360deg) scale(1.2);
+    svg{
+      border: rem(1px) solid #fc1114;;
     }
   }
 }
@@ -1004,6 +1005,9 @@ html [type="button"],
   svg {
     height: 100px;
     width: 100px;
+  }
+  &--eventButton {
+
   }
 }
 

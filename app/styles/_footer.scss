@@ -258,8 +258,14 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    @media (max-width: 576.98px) {
+      min-height: rem(60px);
+    }
   }
   &__copy {
+    @media (max-width: 576.98px) {
+      text-align: center;      
+    }
     p {
       margin: 0;
       color: #737b7e;

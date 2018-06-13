@@ -1,7 +1,5 @@
 .flabNews{
-  @media (max-width: 767.98px) {
     padding-bottom: rem(25px);
-  }
   &__item{
     background-color: #fff;
     box-shadow: 0px 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -124,6 +122,10 @@
       font-weight: 400;
       font-size: rem(16px);
       margin: 0;
+      i{
+        margin-right: rem(5px);
+        font-size: rem(15px);
+      }
     }
   }
   &__sociAll{
