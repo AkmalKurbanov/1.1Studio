@@ -8,7 +8,8 @@
     "jquery.maskedinput": "^1.4.1",
     "jQuery.mmenu": "mmenu#^7.0.3",
     "swiper": "^4.3.0",
-    "fancybox": "fancyBox#^3.3.5"
+    "fancybox": "fancyBox#^3.3.5",
+    "blueimp-file-upload": "jQuery-File-Upload#^9.21.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

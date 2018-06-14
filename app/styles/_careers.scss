@@ -101,6 +101,11 @@
       background-color: #020f1d;
       color: #fff;
       padding: 10px 25px;
-    }
-  }
+      text-decoration: none;
+      transition: all .3s;
+      &:hover {        
+        box-shadow: 0 8px 16px 0 rgba(2,15,29,.37);
+     }
+   }
+ }
 }

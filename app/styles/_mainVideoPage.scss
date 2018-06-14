@@ -282,7 +282,7 @@ p {
   bottom: 0;
   &:first-child {
     left: 0;
-    height: 2px;
+    height: 4px;
     animation: none;
     animation-duration: 0.5s;
     animation-delay: 0.34s;
@@ -290,7 +290,7 @@ p {
   }
   &:nth-child(2) {
     left: 6px;
-    height: 3px;
+    height: 6px;
     animation: none;
     animation-duration: 0.5s;
     animation-delay: 0.34s;
@@ -298,7 +298,7 @@ p {
   }
   &:last-child {
     left: 12px;
-    height: 4px;
+    height: 8px;
     animation: none;
     animation-duration: 0.5s;
     animation-delay: 0.34s;
@@ -309,32 +309,33 @@ p {
 
 .equalizerOff {
   .flabMainVideo__equalizerItem {
-   &:first-child {
-    height: 10px;
-    left: 0;
-    animation-name: shorteq;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-  }
-  &:nth-child(2) {
-    height: 10px;
-    left: 6px;
-    animation-name: talleq;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.17s;
-  }
-  &:last-child {
-    height: 10px;
-    left: 12px;
-    animation-name: shorteq;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.34s;
-  }
 
-}
+    &:first-child {
+      height: 10px;
+      left: 0;
+      animation-name: shorteq;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      height: 10px;
+      left: 6px;
+      animation-name: talleq;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.17s;
+    }
+    &:last-child {
+      height: 10px;
+      left: 12px;
+      animation-name: shorteq;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.34s;
+    }
+
+  }
 }
 
 .pause-js,

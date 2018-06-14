@@ -105,10 +105,10 @@
     }
     &--file{
      padding-bottom: rem(8.5px);
-     display: flex;
-     align-items: flex-end;
-     height: 100%;
-     label{
+     button {
+      margin-top: rem(27px);
+    }
+    label{
       cursor: pointer;
       @media (max-width: 350px) {
         display: block;

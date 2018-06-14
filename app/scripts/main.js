@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+// video volume
+$('#video').prop('volume', 0.3);
+// video volume end
 
  // slider //////////////////////////////////////////////////////////////////
  var swiper = new Swiper('.rewardsSlide-js', {
