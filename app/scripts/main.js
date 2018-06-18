@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-// video volume
-$('#video').prop('volume', 0.3);
-// video volume end
-
  // slider //////////////////////////////////////////////////////////////////
  var swiper = new Swiper('.rewardsSlide-js', {
   slidesPerView: 4,
@@ -91,11 +87,6 @@ $('#video').prop('volume', 0.3);
   }
 });
  // slider end //////////////////////////////////////////////////////////////////
-
-
-
-
-
 
     // search //////////////////////////////////////////////////////////////////
     $('.search-js, .closeBtn-js').click(function () {
@@ -348,12 +339,6 @@ $inputItem.length && $inputItem.each(function () {
   });
   //E-mail Ajax end  //////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
   // acardeon //////////////////////////////////////////////////////////////////
   $('.buttonHiddenItem-jss').click(function () {
     $(this).next().slideToggle(800);
@@ -362,38 +347,6 @@ $inputItem.length && $inputItem.each(function () {
     $(this).toggleClass('blink_link');
   });
   // acardeon end //////////////////////////////////////////////////////////////////
-  
-
-  
-
-
-
-// contropls buttons on main page //////////////////////////////////////////////////////////////////
-$('.pause-js').click(function () {
-  if($('#video').get(0).paused == true){
-    $(this).html('<i class="fal fa-pause"></i>')
-    $('#video').get(0).play();     
-  }
-
-  else{
-    $(this).html('<i class="fal fa-play"></i>')
-    $('#video').get(0).pause();
-  }
-});
-if($('#video').get(0).paused == true){
- $('#video').get(0).play();     
-}
-
-
-$('.equalizer-js').click(function () {
-  if($('#video').get(0).muted == false){
-    $('#video').get(0).muted = true;    
-  }
-  else{
-    $('#video').get(0).muted = false;
-  }
-});
-// contropls buttons on main page end //////////////////////////////////////////////////////////////////
 
 
 

@@ -9,8 +9,8 @@ $icon-font-path: '../fonts/';
 // Optional bootstrap
 @import "./bower_components/bootstrap4/scss/reboot";
 @import "./bower_components/bootstrap4/scss/grid";
-@import "./bower_components/bootstrap4/scss/nav";
 // End optional
+
 // optional ember-burger-menu
 // optional end
 // Fonts
@@ -42,4 +42,5 @@ $icon-font-path: '../fonts/';
 @import "_event";
 @import "_iphone";
 @import "_error";
+@import "_copyAG";
 @import "_footer";

@@ -50,6 +50,8 @@
       color: #000;
       font-size: rem(16px);
       margin-top: rem(15px);
+      padding-left: rem(30px);
+      position: relative;
       &:first-child{
         margin-top: 0;
       }
@@ -58,6 +60,9 @@
       }
       i{
         color: #737b7e;
+        position: absolute;
+        left: 0;
+        top: rem(5px);
       }
       a{
         color: #000;
@@ -80,6 +85,7 @@
     color: #fff;
     padding: rem(10px) rem(25px);
     cursor: pointer;
+    margin-top: 24px;
     @media (max-width: 1199px) {
       font-size: rem(13px);
       padding: rem(6px) rem(15px);
