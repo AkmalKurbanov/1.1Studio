@@ -1,5 +1,5 @@
 .flabNews{
-    padding-bottom: rem(25px);
+  padding-bottom: rem(25px);
   &__item{
     background-color: #fff;
     box-shadow: 0px 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
     @include media-breakpoint-down(sm) {
       height: rem(250px);
     }
@@ -41,17 +42,17 @@
       opacity: 0;
       transition: all .3s;
     }
-    &:hover {
+    &:hover {     
       &:after{
         opacity: 1;
       }
       .flabNews__butTon{
         opacity: 1;
         z-index: 2;
-      }
-      .flabAboutUs__rewardsItemEffect {
+      }      
+      .hoverEffect {
         opacity: 1;
-        &:first-child {
+        &:nth-child(1) {
           left: rem(12px);
           top: rem(12px);
         }
@@ -61,9 +62,11 @@
         }
         &:nth-child(3) {
           left: rem(12px);
+          bottom: rem(12px);
         }
         &:nth-child(4) {
           right: rem(12px);
+          bottom: rem(12px);
         }
       }
     }
