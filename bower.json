@@ -8,10 +8,34 @@
     "jquery.maskedinput": "^1.4.1",
     "jQuery.mmenu": "mmenu#^7.0.3",
     "swiper": "^4.3.0",
-    "fancybox": "fancyBox#^3.3.5"
+    "fancybox": "fancyBox#^3.3.5",
+    "isotope-layout": "^3.0.6"
   },
   "overrides": {
     "modernizr": {
+      "main": []
+    },
+    "masonry-layout": {
+      "main": []
+    },
+    "isotope-layout": {
+      "main": [
+        "dist/isotope.pkgd.min.js"
+      ]
+    },
+    "outlayer": {
+      "main": []
+    },
+    "ev-emitter": {
+      "main": []
+    },
+    "get-size": {
+      "main": []
+    },
+    "fizzy-ui-utils": {
+      "main": []
+    },
+    "desandro-matches-selector": {
       "main": []
     }
   },
